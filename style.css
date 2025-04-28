@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #1c1c1c; /* Dark background */
-  color: #f1f1f1;
+  background-color: #1c1c1c; /* Dark grey background */
+  color: #ffffff; /* White font color for the body */
   line-height: 1.6;
   padding: 20px;
 }
@@ -16,17 +16,17 @@ body {
 header {
   text-align: center;
   padding: 30px 10px;
-  background-color: #435146; /* Accent color for header */
+  background-color: #435146; /* Muted green for the header */
 }
 
 header h1 {
   font-size: 3rem;
-  color: #ff0033;
+  color: #ffffff; /* White text for the main title */
 }
 
 header p {
   font-size: 1.2rem;
-  color: #cccccc;
+  color: #cccccc; /* Lighter grey for subtitle */
   margin-bottom: 20px;
 }
 
@@ -35,7 +35,7 @@ nav {
 }
 
 nav a {
-  color: #f1f1f1;
+  color: #ffffff; /* White text for navigation links */
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
@@ -44,7 +44,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #4a6958; /* Hover color */
+  color: #4a6958; /* Muted olive green for hover effect */
 }
 
 main {
@@ -55,21 +55,21 @@ main {
 
 section {
   margin-bottom: 60px;
-  background-color: #1b2922; /* Deep green background for sections */
+  background-color: #1b2922; /* Deep green for section background */
   padding: 20px;
   border-radius: 8px;
 }
 
 section h2 {
   font-size: 2.5rem;
-  color: #435146; /* Muted green for section titles */
+  color: #435146; /* Muted green for section headings */
   margin-bottom: 20px;
 }
 
 section h3 {
   margin-top: 15px;
   font-size: 1.5rem;
-  color: #ff4d4d; /* Accent red for subtitles */
+  color: #ff4d4d; /* Accent red for section subtitles */
 }
 
 ul {
@@ -84,8 +84,8 @@ ul li {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #1c1c1c; /* Dark grey for footer */
-  color: #888;
+  background-color: #1c1c1c; /* Dark grey footer background */
+  color: #888; /* Lighter grey text for footer */
   font-size: 0.9rem;
   margin-top: 40px;
 }
