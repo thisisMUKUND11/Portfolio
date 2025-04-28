@@ -89,6 +89,10 @@ footer {
   font-size: 0.9rem;
   margin-top: 40px;
 }
+header, nav, main, section, footer {
+  border-radius: 8px;
+}
+
 
 /* ----------- Responsive Design ----------- */
 
