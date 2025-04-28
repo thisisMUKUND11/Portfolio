@@ -1,3 +1,4 @@
+/* Style for the container that holds subdivisions */
 .subdivision-container {
   display: flex;
   flex-wrap: wrap;
@@ -5,30 +6,44 @@
   margin-top: 20px;
 }
 
+/* Style for each subdivision (individual card) */
 .subdivision {
-  background-color: #2b3a32; /* Slightly lighter than section background */
+  background-color: #2b2b2b; /* Dark background for the box */
   padding: 20px;
-  border-radius: 8px;
-  flex: 1 1 calc(50% - 20px); /* Two in a row */
+  border-radius: 10px;
+  flex: 1 1 calc(50% - 20px); /* Two cards per row */
   min-width: 300px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* BLACK shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover effect (optional for nice feel) */
+.subdivision:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+}
+
+/* Heading inside each subdivision */
 .subdivision h3 {
   margin-bottom: 10px;
   color: #ffffff;
   font-size: 1.4rem;
 }
 
+/* Text inside each subdivision */
+.subdivision p, 
+.subdivision li {
+  color: #dddddd;
+  font-size: 1rem;
+}
+
+/* List style inside subdivisions */
 .subdivision ul {
-  list-style: disc inside;
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
-.subdivision ul li {
-  margin: 5px 0;
-}
-
-/* Responsive for mobile */
+/* Responsive: Full width on small screens */
 @media (max-width: 768px) {
   .subdivision {
     flex: 1 1 100%;
