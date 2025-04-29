@@ -479,6 +479,7 @@ a:focus {
     position: relative;
     width: 100%;
     margin: -45px 0 45px 0;
+    margin-top: 50px;
 }
 
 .about .col-lg-6 {
@@ -946,11 +947,15 @@ a:focus {
 
 .banner .section-header h2 {
     color: #ffffff;
+    font-weight: bold; /* Make it bold */
+    white-space: nowrap; /* Keep it in a single line */
 }
 
 .banner .section-header h2 span {
-    color: #414141;
+    color: #ffffff; /* Make text white */
     font-size: 50px;
+    font-weight: bold;
+
 }
 
 .banner .banner-text p {
@@ -1311,80 +1316,46 @@ a:focus {
     width: 100%;
     margin: 45px 0;
     background: #EF233C;
+    color: #ffffff; /* Text color white */
 }
 
 .contact .container-fluid {
-    background: url(../img/contact.jpg) left center no-repeat;
-    background-size: contain;
+    background: none; /* Remove background image */
 }
 
-.contact .contact-form {
+.contact .contact-info {
     position: relative;
     padding: 90px 0 90px 45px;
     background: #EF233C;
+    color: #ffffff; /* Text color white */
 }
 
-.contact .contact-form input {
-    color: #ffffff;
-    padding: 15px 0;
-    background: none;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(256, 256, 256, .5);
-}
-
-.contact .contact-form textarea {
-    color: #ffffff;
-    height: 90px;
-    padding: 15px 0;
-    background: none;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(256, 256, 256, .5);
-}
-
-.contact .contact-form .form-control::placeholder {
-    color: #ffffff;
-    opacity: 1;
-}
-
-.contact .contact-form .form-control:-ms-input-placeholder,
-.contact .contact-form .form-control::-ms-input-placeholder {
+.contact .contact-info h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
     color: #ffffff;
 }
 
-.contact .contact-form .btn {
-    margin-top: 35px;
-    color: #EF233C;
-    background: #ffffff;
-    box-shadow: inset 0 0 0 50px #ffffff;
+.contact .contact-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
-.contact .contact-form .btn:hover {
-    color: #ffffff;
-    background: transparent;
-    box-shadow: inset 0 0 0 0 #ffffff;
-    border-color: #ffffff;
-}
-
-.contact .help-block ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    font-size: 14px;
-    font-style: italic;
-    color: #ffffff;
+.contact .contact-info p strong {
+    font-weight: bold; /* Make subheadings bold */
 }
 
 @media (max-width: 767.98px) {
     .contact .container-fluid {
         background: none;
     }
-    
-    .contact .contact-form {
+
+    .contact .contact-info {
         padding: 90px 0;
     }
 }
+
 
 
 /*******************************/
