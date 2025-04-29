@@ -919,7 +919,7 @@ a:focus {
 /*******************************/
 /********* Banner CSS **********/
 /*******************************/
-.banner {
+..banner {
     position: relative;
     width: 100%;
     margin: 45px 0;
@@ -930,6 +930,7 @@ a:focus {
 .banner .container {
     max-width: 750px;
     text-align: center;
+    padding: 0 15px; /* Prevent overflow on small screens */
 }
 
 .banner .section-header {
@@ -939,30 +940,29 @@ a:focus {
 .banner .section-header p {
     color: #414141;
     background: transparent;
-}
-
-.banner .section-header p::after {
-    display: none;
+    font-size: 18px;
 }
 
 .banner .section-header h2 {
     color: #ffffff;
-    font-weight: bold; /* Make it bold */
-    white-space: nowrap; /* Keep it in a single line */
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 36px;
 }
 
 .banner .section-header h2 span {
-    color: #ffffff; /* Make text white */
+    color: #ffffff;
     font-size: 50px;
     font-weight: bold;
-
 }
 
 .banner .banner-text p {
     font-size: 18px;
     color: #ffffff;
+    padding: 0 10px;
 }
 
+/* Button styles */
 .banner .banner-text .btn {
     margin-top: 15px;
     color: #EF233C;
@@ -975,6 +975,44 @@ a:focus {
     background: transparent;
     box-shadow: inset 0 0 0 0 #ffffff;
     border-color: #ffffff;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .banner {
+        padding: 60px 0;
+    }
+
+    .banner .section-header h2 {
+        font-size: 28px;
+        white-space: normal; /* allow wrapping */
+    }
+
+    .banner .section-header h2 span {
+        font-size: 36px;
+    }
+
+    .banner .banner-text p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        padding: 40px 0;
+    }
+
+    .banner .section-header h2 {
+        font-size: 24px;
+    }
+
+    .banner .section-header h2 span {
+        font-size: 28px;
+    }
+
+    .banner .banner-text p {
+        font-size: 14px;
+    }
 }
 
 
